@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Prediction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <main id="app" class="app">
+        <header class="app-header">
+            <h1> Who are you? Mr. or Ms.?</h1>
+        </header>
+        <section class="prediction-section">
+            <form id="predictionForm" class="prediction-form">
+                <div class="form-group">
+                    <label for="nameInput">Your Name:</label>
+                    <input type="text" id="nameInput" name="name" />
+                </div>
+                <div class="gender-selection">
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Mr.</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Ms.</label>
+                    <input type="radio" id="api" name="gender" value="api" checked />
+                    <label for="api">API</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                    <button type="button" id="saveButton" class="btn save-btn">Save</button>
+                </div>
+            </form>
+        </section>
+        <section id="messages" class="messages">
+            <div id="errorMessage" class="error-message"></div>
+            <div id="predictionResult" class="prediction-result">
+                <h2>Your Prediction</h2>
+                <p></p>
+            </div>
+        </section>
+        <section class="saved-answers">
+            <header>
+                <h2>Saved Responses</h2>
+            </header>
+            <ul id="savedAnswers" class="saved-list"></ul>
+            <button id="clearAllButton" class="btn clear-all-btn">Clear All</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

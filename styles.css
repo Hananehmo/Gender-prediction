@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background image */
+body {
+  background: url('./back.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif; /* Changed font to Georgia */
+}
+
+/* Main application container */
+.app {
+  width: 90%;
+  margin: 20px auto;
+  background: rgba(173, 216, 230, 0.8); /* Light blue background color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.app-header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Form container */
+.prediction-form-container {
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Text field styles */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Gender options */
+.gender-options label {
+  margin-right: 10px;
+}
+
+/* Form actions */
+.form-actions {
+  margin-top: 10px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  background-color: #337ab7; /* Updated button color */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Primary button modifier */
+.btn-primary {
+  background-color: #337ab7;
+}
+
+/* Secondary button modifier */
+.btn-secondary {
+  background-color: #5bc0de;
+}
+
+/* Clear button modifier */
+.btn-clear {
+  background-color: #d9534f; /* Red clear button color */
+}
+
+/* Button hover effects */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Results and saved responses styles */
+.results {
+  margin-top: 20px;
+}
+
+/* Individual result box */
+.prediction-result {
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Saved responses aside */
+.saved-responses {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Saved list styles */
+.saved-list {
+  list-style-type: none;
+  padding: 0;
+}
